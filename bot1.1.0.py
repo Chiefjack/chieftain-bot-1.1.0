@@ -135,7 +135,7 @@ async def supportresponse(ctx, member: discord.Member):
 	channel = bot.get_channel("452074067068190721")
 	await bot.send_message(channel, reply)
 	message = ctx.message.content
-	messagereplace = message.replace("c?supportresponse", "")
+	messagereplace = message.replace("c!supportresponse", "")
 	embed = discord.Embed(title="Your Support Request", description=f"Your support request is complete!", timestamp=datetime.datetime.utcnow(), inline=False, color=0x00FF00)
 	embed.add_field(name="Great News!", value="**Your query has a response!**\n"
 											 f"Response from *{ctx.message.author}*, who says:\n"
