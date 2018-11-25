@@ -124,6 +124,7 @@ async def support(ctx):
 	support_channel = bot.get_channel("473160119979343873")
 	await bot.send_message(support_channel, support_req)
 	await bot.send_message(author, embed=embed)
+	await bot.say(f"Your support query has been sent {author.mention}, we'll try and look at it soon. Meanwhile check your DMs for more info!")
 
 @bot.command(pass_context=True)
 async def supportresponse(ctx, member: discord.Member):
