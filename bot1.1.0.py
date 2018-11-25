@@ -11,7 +11,7 @@ import time
 from datetime import timedelta
 from discord.voice_client import VoiceClient
 
-bot = commands.Bot(command_prefix="c?")
+bot = commands.Bot(command_prefix="c!")
 bot.remove_command("help")
 os.chdir(r"C:\Users\jackh\Desktop\Discord Bot!")
 client = discord.Client()
